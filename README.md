@@ -7,6 +7,8 @@ SQLEFS is an emulated file system for PHP using SQL. SQLEFS gives you full contr
 * Fewer security concerns
 * Platform independence
 
+http://PracticalProductivity.com/sqlefs/
+
 
 Installation 
 
