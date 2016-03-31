@@ -1,0 +1,41 @@
+# wish list
+# * multi filesystem (multiple block)
+# * stream - returns file block by block 
+# * ensure proper return values
+# * user '' should be nobody user (anyone can access)
+# * improve query forming 
+# * drop filetypes
+# * improve ls sorts (modified, alpha)
+# * find - filename regexp
+# * search - looks inside a file
+# * move / rename
+# * rm should support regexp/like (path delete supported if regexp given
+#		rm('/') deletes nothing. no regexp means only a file can be deleted, not a path.
+#		rm('/','*') deletes all files in '/' folder with '*' macro for '|.*|'
+#		rm('C:','|.*|') deletes volume c
+# * rmdir should support deletion of sub directories
+# * info on volume should return something
+# * append, and log (append with lf)
+# * fdisk return values
+# * format return values
+# * zip/unzip
+# * mount/boot -> init()???
+# * touch - update timestamp
+# * add db to path spec: username@//database/volume:/folder/file
+# * boot flag, and system files
+
+# filenames must not have /@:! and preferably no . (dot used for extensions)
+
+
+	# REGEXP wildcards:
+	#	“.” matches any single character. CAUTION test.txt will match test1txt!!!
+	#	A character class “[...]” matches any character within the brackets. 
+	#		For example, “[abc]” matches “a”, “b”, or “c”. To name a range of characters, use a dash.
+	#		“[a-z]” matches any letter, whereas “[0-9]” matches any digit.
+	#	“*” matches zero or more instances of the thing preceding it. 
+	#		For example, “x*” matches any number of “x” characters, “[0-9]*” matches any number of digits, 
+	#		and “.*” matches any number of anything.
+	#	A REGEXP pattern match succeeds if the pattern matches anywhere in the value being tested.
+	#		This differs from a LIKE pattern match, which succeeds only if the pattern matches the entire value.
+	#	To anchor a pattern so that it must match the beginning or end of the value being tested, 
+	#		use “^” at the beginning or “$” at the end of the pattern.
